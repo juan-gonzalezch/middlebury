@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(49, 49, 144); 
+    
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(223, 229, 245);
+    
+}
+header h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: rgb(167, 189, 248);
+}
+
+main .bgi  {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Panorama_9_de_Julio_y_el_Obelisco.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+        filter: blur(1.25rem);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2px) blur(.625rem);
+    }
+}
+main h2 {
+    text-align: center;
+    font-size: 3.75rem;
+    font-family: 'Alfa Slab One', serif;
+    color: rgb(223, 229, 245);
+    
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;   
+    animation: entradaIzq
+                .8s ease;
+}
+
+
+.column:hover {
+    transform: scale(1.1);
+}
+
+
+.botones .column  {
+    width: 250px;
+    height:70px;
+    background: linear-gradient(to left top, rgba(66, 66, 116, 0.783) 50%, #5f6bb0e3 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 5px 1px 2px rgba(0, 0, 0, 0.425);
+    border-radius: .625rem;    
+}
+@keyframes entradaIzq {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.botonnuevo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: .625rem;
+}
+.botonnuevo .column {
+    width: 250px;
+    height:70px;
+    background: linear-gradient(to left top, rgba(66, 66, 116, 0.783) 50%, #5f6bb0e3 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 5px 1px 2px rgba(0, 0, 0, 0.425);
+    border-radius: .625rem;
+}
+
+
+.informacion {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    background-color: rgba(0, 0, 0, 0.474);
+    width:700px;
+    height: 12.5rem;
+    border-radius: 1.25rem;
+    
+}
+
+.informacion h2{
+    font-size: 1.875rem;
+    padding-bottom: .625rem;
+    
+}
+
+.informacion p {
+    font-size: 1.25rem;
+    padding-bottom: .3125rem
+}
+
+.informacion .infoHotel {
+    display: block;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.informacion .infoDirectores {
+    margin-left: .9375rem;
+}
+
+
+
+
+
+
+
+
+
+/* resourceshtml*/
+main .bgia {
+    position: relative;
+    background-image: url("https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/Casa_Rosada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 43.75rem;
+    animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;
+        filter: blur(1.25rem);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2px) blur(.625rem);
+    }
+}
+
+
+    main {
+        color: white;
+    }
+    main h2 {
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 3.125rem;
+    }
+    .botones button  {
+        width: 250px;
+        height:70px;
+        background: linear-gradient(to left top, rgba(66, 66, 116, 0.783) 50%, #5f6bb0e3 50%);
+        border-style: none;
+        color:#fff;
+        font-size: 23px;
+        letter-spacing: 3px;
+        font-family: 'Lato';
+        font-weight: 600;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        padding: 0px;
+        overflow: hidden;
+        transition: all .5s;
+        box-shadow: 5px 1px 2px rgba(0, 0, 0, 0.425);
+        border-radius: .625rem;
+    }
+    .botones .column {
+        display: block;
+        margin: 3.125rem;
+    }
+    .botones .column a {
+        text-decoration: none;
+    }
+
+    .subActivities {
+        display: flex;
+        justify-content: center;
+        margin-top: 6.25rem;
+        border-radius: .9375rem;
+    }
+    .subActivities h2{
+        background: linear-gradient(to left top, rgba(140, 140, 170, 0.783) 50%, #3043aee3 50%);;
+        display: inline-block;
+        text-align: center;
+        padding-right: 6.25rem;
+        padding-left: 6.25rem
+    }
+    main .sectionPrincipal {
+        background-color: rgba(0, 0, 0, 0.814);
+        width: 100%;
+    }
+    main .sectionPrincipal .restaurantes {
+        color: white;
+        padding: 20px;
+        box-sizing: border-box; /* Asegura que el padding no incremente el tamaño total */
+    }
+
+    .sectionPrincipal .calleCerrito  {
+        margin-left: 3.125rem;
+        padding-top: .9375rem;
+    }
+
+    .sectionPrincipal  .ATMs{
+        padding-bottom: 3.125rem;
+    }
+
+    .sectionPrincipal .avenidaCorrientes {
+        margin-left: 3.125rem;
+    }
+    .sectionPrincipal .avenidaCorrientes .imgcorrientes {
+        width: 5rem;
+        height: 5rem;
+    }
+
+
+    .sectionPrincipal .avenidaDemayo {
+        margin-left: 3.125rem;
+    }
+
+    
+
+    /**arrivalsahtml
+    **/
+.bgiar {
+    position: relative;
+    background-image: url(../assets/ezeiza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 43.75rem;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+        filter: blur(1.25rem);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2px) blur(.625rem);
+    }
+}
+
+.sectionPrincipala {
+    background-color: rgba(0, 0, 0, 0.515);
+    width: 100%;
+}
+
+.sectionPrincipala h2 {
+    font-size: 30px;
+    padding-bottom: 1.25rem;
+}
+
+.sectionPrincipala h3 {
+    margin-left: 2.5rem;
+    padding-bottom: .625rem;
+}
+.textoA {
+    margin-left: 2.5rem;
+    
+    
+}
+
+.textoA .texto1 {
+    font-size: .9375rem;
+    padding-bottom: 1.25rem;
+}
+
+.textoB {
+    display: flex;
+    justify-content: center;
+}
+.link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(138, 120, 218);
+    padding-bottom: 1.25rem;
+}
+
+.textoA .divP {
+    padding-bottom: .75rem;
+}
+
+ /**planHTML
+    **/
+.bgipl {
+    position: relative;
+    background-image: url(../assets/HD-wallpaper-buenos-aires-colors-landscape.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 43.75rem;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+        filter: blur(1.25rem);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2px) blur(.625rem);
+    }
+}
+
+.sectionPrincipalp {
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+}
+
+  .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.25rem;
+        
+    }
+
+
+.sectionPrincipalp .imgp {
+
+    border-style: groove;
+    
+    width: 50rem;
+    height: 25rem;
+    overflow: hidden;
+    
+}
+
+.imgp img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/**emergency
+    **/
+    .bgiem{
+        position: relative;
+        background-image: url(../assets/fotoba.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 43.75rem;
+        animation: fadeIn 3s ease;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;
+            filter: blur(1.25rem);
+        }
+    
+        10% {
+            opacity: 1;
+            filter: brightness(2px) blur(.625rem);
+        }
+    }
+    .sectionPrincipale {
+            background-color: rgba(0, 0, 0, 0.814);
+            width: 100%;
+
+    }
+
+    .sectionPrincipale .same {
+        padding-bottom: .75rem;
+        margin-left: 1.5625rem;
+    }
+
+    .sectionPrincipale .haleman {
+        margin-left: 1.5625rem;   
+    }
+
+    .sectionPrincipale .haleman h3{
+        padding-top: .625rem;
+        padding-bottom: .625rem;
+    }
+    .sectionPrincipale .haleman .paleman {
+        padding-bottom: .625rem;
+    }
+    
+    
+  .sectionPrincipale .lialeman {
+    margin-left: 1.5625rem;
+  }
+
+  /**activities html
+    **/
+.bgiac {
+    position: relative;
+    background-image: url(../assets/puertomadero.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 43.75rem;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+        filter: blur(1.25rem);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2px) blur(.625rem);
+    }
+}
+
+.sectionPrincipalac {
+    background-color: rgba(0, 0, 0, 0.814);
+            width: 100%;
+}
+.sectionPrincipalac h2{
+    padding-bottom: .9375rem;
+}
+.sectionPrincipalac .Cafes {
+    margin-left: 1.875rem;
+    padding-bottom: .9375rem;
+}
+.sectionPrincipalac .Cafes h3{
+    padding-bottom: .625rem;
+}
+.sectionPrincipalac  .tango{
+    margin-left: 1.875rem;  
+    padding-bottom: .9375rem;  
+}
+
+.sectionPrincipalac .tangos{
+    margin-left: 1.875rem;  
+    padding-bottom: .9375rem; 
+    background-color: rgba(18, 17, 17, 0.392);
+}
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+    header {
+        background-color: rgb(49, 49, 144); 
+        color: white;
+    }
+    header h1 {
+        align-items: center;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    header h2 {
+        text-align: center;
+        align-items: center;
+        font-size: 1.875rem;
+    }
+    
+    main h2 {
+        align-items: center;
+        text-align: center;
+        font-size: 3.125rem;
+        
+    }
+    .botones button  {
+        width: 250px;
+        height:70px;
+        background: linear-gradient(to left top, rgba(66, 66, 116, 0.783) 50%, #5f6bb0e3 50%);
+        border-style: none;
+        color:#fff;
+        font-size: 23px;
+        letter-spacing: 3px;
+        font-family: 'Lato';
+        font-weight: 600;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        padding: 0px;
+        overflow: hidden;
+        transition: all .5s;
+        box-shadow: 5px 1px 2px rgba(0, 0, 0, 0.425);
+        border-radius: .625rem;
+    }
+    .botones .column {
+        display: block;
+        margin: 1.875rem;
+    }
+    .botones .column a {
+        text-decoration: none;
+    }
+    .botonnuevo{
+        display: flex;
+        text-align: center;
+        padding-top: 1.875rem;
+    }
+
+}
+
+@media (max-width: 768px){
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 1.5rem;
+    }
+    .botones {
+        align-items: center;
+        margin: 0;
+        flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
+    }
+    main .bgi {
+        background-position: 70% 80%;
+    }
+    .column {
+        margin: 2rem;
+    }
+    .botonnuevo{
+        display: flex;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:425px){
+    .informacion{
+        width: 100%;
+    }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.125rem;
+    
+}
+}
