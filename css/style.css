@@ -21,7 +21,7 @@ header h2 {
     justify-content: center;
     font-size: 2.5rem;
     font-family: 'Archivo Narrow', sans-serif;
-    color: rgb(167, 189, 248);
+    color: white;
 }
 
 main .bgi  {
@@ -45,7 +45,7 @@ main .bgi  {
 main h2 {
     text-align: center;
     font-size: 3.75rem;
-    font-family: 'Alfa Slab One', serif;
+    
     color: rgb(223, 229, 245);
     
 }
@@ -67,7 +67,7 @@ main h2 {
 
 
 .botones .column  {
-    width: 250px;
+    width: 9.375rem;
     height:70px;
     background: linear-gradient(to left top, rgba(66, 66, 116, 0.783) 50%, #5f6bb0e3 50%);
     border-style: none;
@@ -123,14 +123,16 @@ main h2 {
     margin-left: auto;
     margin-right: auto;    
     background-color: rgba(0, 0, 0, 0.474);
-    width:700px;
+    width: 31.25rem;
     height: 12.5rem;
+    box-sizing: border-box;
+    overflow: auto;
     border-radius: 1.25rem;
     
 }
 
 .informacion h2{
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
     padding-bottom: .625rem;
     
 }
@@ -222,14 +224,16 @@ main .bgia {
         display: flex;
         justify-content: center;
         margin-top: 6.25rem;
-        border-radius: .9375rem;
+        border-radius: .9375rem;   
     }
     .subActivities h2{
         background: linear-gradient(to left top, rgba(140, 140, 170, 0.783) 50%, #3043aee3 50%);;
         display: inline-block;
         text-align: center;
         padding-right: 6.25rem;
-        padding-left: 6.25rem
+        padding-left: 6.25rem;
+        font-size: 25px;
+        
     }
     main .sectionPrincipal {
         background-color: rgba(0, 0, 0, 0.814);
@@ -241,9 +245,15 @@ main .bgia {
         box-sizing: border-box; /* Asegura que el padding no incremente el tamaño total */
     }
 
-    .sectionPrincipal .calleCerrito  {
+    .sectionPrincipal .calleCerrito .ATMs {
         margin-left: 3.125rem;
         padding-top: .9375rem;
+    }
+    .calleCerrito h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5625rem;
     }
 
     .sectionPrincipal  .ATMs{
@@ -253,14 +263,16 @@ main .bgia {
     .sectionPrincipal .avenidaCorrientes {
         margin-left: 3.125rem;
     }
-    .sectionPrincipal .avenidaCorrientes .imgcorrientes {
-        width: 5rem;
-        height: 5rem;
+    .sectionPrincipal .avenidaCorrientes h2 {
+        font-size: 1.25rem;
     }
-
+    
 
     .sectionPrincipal .avenidaDemayo {
         margin-left: 3.125rem;
+    }
+    .sectionPrincipal .avenidaDemayo h2 {
+        font-size: 1.25rem;
     }
 
     
@@ -269,7 +281,7 @@ main .bgia {
     **/
 .bgiar {
     position: relative;
-    background-image: url(../assets/ezeiza.jpg);
+    background-image: url(../assets/HD-wallpaper-buenos-aires-colors-landscape.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -293,7 +305,7 @@ main .bgia {
 }
 
 .sectionPrincipala h2 {
-    font-size: 30px;
+    font-size: 1.5625rem;
     padding-bottom: 1.25rem;
 }
 
@@ -351,7 +363,7 @@ main .bgia {
 }
 
 .sectionPrincipalp {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.631);
         width: 100%;
 }
 
@@ -384,7 +396,7 @@ main .bgia {
     **/
     .bgiem{
         position: relative;
-        background-image: url(../assets/fotoba.jpeg);
+        background-image: url(../assets/HD-wallpaper-buenos-aires-colors-landscape.jpeg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -433,7 +445,7 @@ main .bgia {
     **/
 .bgiac {
     position: relative;
-    background-image: url(../assets/puertomadero.jpeg);
+    background-image: url(../assets/HD-wallpaper-buenos-aires-colors-landscape.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -588,6 +600,23 @@ main .bgia {
     justify-content: center;
     align-items: center;
     padding-top: 3.125rem;
-    
 }
+
+ .bgiem{
+    background-image: url(../assets/HD-wallpaper-buenos-aires-colors-landscape.jpeg);
+ }
+
+ .botonnuevo{
+    width: 100%;
+ }
+}
+
+@media screen and (max-width: 375px) {
+    .informacion {
+        padding: 0.5rem; /* Reducir el relleno para conservar espacio */
+    }
+
+    .infoDirectores .nombres {
+        font-size: 0.9rem; /* Reducir el tamaño del texto en sección de directores */
+    }
 }
