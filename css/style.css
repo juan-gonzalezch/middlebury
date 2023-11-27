@@ -465,7 +465,7 @@ main .bgia {
 
 .sectionPrincipalac {
     background-color: rgba(0, 0, 0, 0.814);
-            width: 100%;
+    width: 100%;
 }
 .sectionPrincipalac h2{
     padding-bottom: .9375rem;
@@ -487,6 +487,59 @@ main .bgia {
     padding-bottom: .9375rem; 
     background-color: rgba(18, 17, 17, 0.392);
 }
+
+/**schedule html
+    **/
+.bgisch {
+    position: relative;
+    background-image: url(../assets/HD-wallpaper-buenos-aires-colors-landscape.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 43.75rem;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+        filter: blur(1.25rem);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2px) blur(.625rem);
+    }
+}
+
+.sectionPrincipalsch {
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.814) ;
+}
+.sectionPrincipalsch h2 {
+    font-size: 1.25rem;
+}
+
+.sectionPrincipalsch h3 {
+    font-size: .9375rem;
+    padding-top: .9375rem;
+    display: flex;
+    justify-content: center;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5625rem;
+    
+}
+
+.contenedor .imgsch img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+  
 
 
 
